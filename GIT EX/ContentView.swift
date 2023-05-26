@@ -43,7 +43,7 @@ struct ContentView_Previews: PreviewProvider {
 
 struct ListRowView: View {
     var body: some View {
-        NavigationLink(destination: Text("Tolong dibikin ya!")) {
+        NavigationLink(destination: DetailView() ) {
             HStack(alignment: .top) {
                 Rectangle()
                     .frame(width: 80, height: 80)
