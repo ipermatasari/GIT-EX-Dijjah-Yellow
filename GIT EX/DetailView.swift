@@ -44,3 +44,18 @@ struct DetailView: View {
             Spacer()
         }
         .foregroundColor(.orange)
+        .toolbar {
+            // Orang ke 3
+            ToolbarItem(placement: .navigationBarTrailing) {
+                NavBarButton_View(isLoved: $isLoved)
+            }
+        }
+        
+    }
+}
+
+struct DetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        DetailView()
+    }
+}
